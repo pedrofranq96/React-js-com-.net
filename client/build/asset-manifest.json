@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.06ef321c.css",
+    "main.js": "/static/js/main.bbca128b.js",
+    "static/media/padlock.png": "/static/media/padlock.497a7a06fb0337dd2294.png",
+    "static/media/logo.svg": "/static/media/logo.2ec08d3fa3441eb00de8c9c229d8c114.svg",
+    "index.html": "/index.html",
+    "main.06ef321c.css.map": "/static/css/main.06ef321c.css.map",
+    "main.bbca128b.js.map": "/static/js/main.bbca128b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06ef321c.css",
+    "static/js/main.bbca128b.js"
+  ]
+}
