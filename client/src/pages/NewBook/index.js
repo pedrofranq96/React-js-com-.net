@@ -6,7 +6,7 @@ import logoImage from '../../assets/logo.svg';
 import './styles.css';
 
 export default function NewBook(){
-    const navigate = useNavigate();
+    //const navigate = useNavigate();
     return (
         <div className="new-book-container">
             <div className="content">

@@ -8,7 +8,7 @@ import './styles.css';
 export default function Books(){
     return <div className="book-container">
 
-        const navigate = useNavigate();
+        //const navigate = useNavigate();
         <header>
             <img src={logoImage} alt="Erudio"/>
             <span>Bem vindo, <strong>Pedro</strong>!</span>
