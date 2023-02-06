@@ -56,6 +56,14 @@ export default function Books(){
         }
     }
 
+    async function editBook(id){
+        try{
+            navigate(`/book/new/${id}`)
+        }catch (err){
+            alert('Edit failed, try again.')
+        }
+    }
+
 
     return <div className="book-container">
 
@@ -63,7 +71,7 @@ export default function Books(){
         <header>
             <img src={logoImage} alt="Erudio"/>
             <span>Bem vindo, <strong>{userName.toLowerCase()}</strong>!</span>
-            <Link className="button" to="/book/new">Add New Book</Link>
+            <Link className="button" to="/book/new/0">Add New Book</Link>
             <button onClick={logout}type="button">
                 <FiPower size={18} color="#251FC5"/>
             </button>
@@ -82,7 +90,7 @@ export default function Books(){
                     <strong>Release Date:</strong>
                     <p>{Intl.DateTimeFormat('pt-BR').format(new Date(book.launchDate))}</p>
                     
-                    <button type="button">
+                    <button onClick={() => editBook(book.id)} type="button">
                         <FiEdit size={20} color="251FC5"/>
                     </button>
                     <button onClick={() => deleteBook(book.id)} type="button">
