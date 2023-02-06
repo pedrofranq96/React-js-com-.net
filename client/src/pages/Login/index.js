@@ -1,4 +1,5 @@
 import React from "react";
+import {useNavigate} from 'react-router-dom';
 import './styles.css';
 
 import logoImage from '../../assets/logo.svg'
@@ -6,6 +7,7 @@ import padlock from '../../assets/padlock.png'
 
 
 export default function Login(){
+    const navigate = useNavigate();
     return(
         <div className="login-container">   
                 <section className="form">
